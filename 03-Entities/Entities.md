@@ -50,11 +50,18 @@
 2. Select OS version to install and accept license terms  ![screenshot_2025-08-11-03-00-00](images/screenshot_2025-08-11-03-00-00.png)
 3. System couldn't find any drives to install OS  ![screenshot_2025-08-11-03-03-10](images/screenshot_2025-08-11-03-03-10.png)
 Load missing drivers: 
-**Click on load drivers> browse > Virtio CD Drive> vioscsi> w11> Select amd64 > select ok> Next>  
-Browse:  ![screenshot_2025-08-11-03-10-57](images/screenshot_2025-08-11-03-10-57.png).   
-Expand Virtio loaded on one of the two CD Drives:  ![screenshot_2025-08-11-03-11-34](images/screenshot_2025-08-11-03-11-34.png).  
-Find and select win 11:  ![screenshot_2025-08-11-03-15-14](images/screenshot_2025-08-11-03-15-14.png).  
-Next:  ![screenshot_2025-08-11-03-16-41](images/screenshot_2025-08-11-03-16-41.png) .  Next:  ![screenshot_2025-08-11-03-17-19](images/screenshot_2025-08-11-03-17-19.png).  Installing windows:  ![screenshot_2025-08-11-03-18-01](images/screenshot_2025-08-11-03-18-01.png)**
+**Click on load drivers> browse > Virtio CD Drive> vioscsi> w11> Select amd64 > select ok> Next>**  
+  1. Browse:  
+  ![screenshot_2025-08-11-03-10-57](images/screenshot_2025-08-11-03-10-57.png).   
+  2. Expand Virtio loaded on one of the two CD Drives:  ![screenshot_2025-08-11-03-11-34](images/screenshot_2025-08-11-03-11-34.png).  
+  3. Find and select win 11:  
+  ![screenshot_2025-08-11-03-15-14](images/screenshot_2025-08-11-03-15-14.png).  
+  4. Next:  
+  ![screenshot_2025-08-11-03-16-41](images/screenshot_2025-08-11-03-16-41.png)
+  5. Next:  
+  ![screenshot_2025-08-11-03-17-19](images/screenshot_2025-08-11-03-17-19.png)
+  6. Installing windows:  
+  ![screenshot_2025-08-11-03-18-01](images/screenshot_2025-08-11-03-18-01.png)
 
 #### Windows-11-02  
 **Title:** User Workstation B  
