@@ -38,17 +38,23 @@
 - Installed tools: IIS, SQL Server (if applicable)  
 - Key actions: Serve internal apps, DB hosting 
 
-##### Installation & Configuration
-1. Start VM and clicl on console or consle drop down top right and novnc. Press any   key to begin installtion  ![screenshot_2025-08-11-02-57-29](images/screenshot_2025-08-11-02-57-29.png)
-2. Select OS version to install and accept license terms  ![screenshot_2025-08-11-03-00-00](images/screenshot_2025-08-11-03-00-00.png)
-3. System couldn't find any drives to install OS  ![screenshot_2025-08-11-03-03-10](images/screenshot_2025-08-11-03-03-10.png)  Load missing drivers: **Click on load drivers> browse > Virtio CD Drive> vioscsi> w11> Select amd64 > select ok> Next>  Browse:  ![screenshot_2025-08-11-03-10-57](images/screenshot_2025-08-11-03-10-57.png).   Expand Virtio loaded on one of the two CD Drives:  ![screenshot_2025-08-11-03-11-34](images/screenshot_2025-08-11-03-11-34.png).  Find and select win 11:  ![screenshot_2025-08-11-03-15-14](images/screenshot_2025-08-11-03-15-14.png).  Next:  ![screenshot_2025-08-11-03-16-41](images/screenshot_2025-08-11-03-16-41.png) .  Next:  ![screenshot_2025-08-11-03-17-19](images/screenshot_2025-08-11-03-17-19.png).  Installing windows:  ![screenshot_2025-08-11-03-18-01](images/screenshot_2025-08-11-03-18-01.png)**
-
 #### Windows-11-01  
 **Title:** User Workstation A  
 - OS: Windows 10 Pro  
 - Role: Standard user endpoint  
 - Installed tools: Office Suite, VPN client  
-- Key actions: Day-to-day business tasks  
+- Key actions: Day-to-day business tasks 
+
+##### Installation & Configuration
+1. Start VM and clicl on console or consle drop down top right and novnc. Press any   key to begin installtion  ![screenshot_2025-08-11-02-57-29](images/screenshot_2025-08-11-02-57-29.png)
+2. Select OS version to install and accept license terms  ![screenshot_2025-08-11-03-00-00](images/screenshot_2025-08-11-03-00-00.png)
+3. System couldn't find any drives to install OS  ![screenshot_2025-08-11-03-03-10](images/screenshot_2025-08-11-03-03-10.png)
+Load missing drivers: 
+**Click on load drivers> browse > Virtio CD Drive> vioscsi> w11> Select amd64 > select ok> Next>  
+Browse:  ![screenshot_2025-08-11-03-10-57](images/screenshot_2025-08-11-03-10-57.png).   
+Expand Virtio loaded on one of the two CD Drives:  ![screenshot_2025-08-11-03-11-34](images/screenshot_2025-08-11-03-11-34.png).  
+Find and select win 11:  ![screenshot_2025-08-11-03-15-14](images/screenshot_2025-08-11-03-15-14.png).  
+Next:  ![screenshot_2025-08-11-03-16-41](images/screenshot_2025-08-11-03-16-41.png) .  Next:  ![screenshot_2025-08-11-03-17-19](images/screenshot_2025-08-11-03-17-19.png).  Installing windows:  ![screenshot_2025-08-11-03-18-01](images/screenshot_2025-08-11-03-18-01.png)**
 
 #### Windows-11-02  
 **Title:** User Workstation B  
