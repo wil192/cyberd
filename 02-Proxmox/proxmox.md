@@ -91,10 +91,10 @@ bridge_fd 0
 
 ### ISO Upload
 
-- Go to **Datacenter > Storage > ISO Storage**.
+- Go to **pve or choosen node > local > ISO Inages**.  ![screenshot_2025-08-11-02-33-09](images/screenshot_2025-08-11-02-33-09.png)
 - Click **Upload**.
-- Select ISO file from your computer.
-- Wait for upload to complete before using.
+- Select ISO file from your computer.  ![screenshot_2025-08-11-02-34-20](images/screenshot_2025-08-11-02-34-20.png)
+- Wait for upload to complete before using.  ![screenshot_2025-08-11-02-35-04](images/screenshot_2025-08-11-02-35-04.png)
 
 ### Backup and Restore
 
