@@ -77,12 +77,13 @@ bridge_fd 0
 ### Creating a VM
 
 1. Click **Create VM** on the top right. or right click pve node: ![screenshot_2025-08-11-01-40-08](images/screenshot_2025-08-11-01-40-08.png)
-2. Fill in VM ID and Name (no space).
-3. Select ISO from storage.
-4. Choose OS type.
-5. Configure CPU, Memory, Disk size.
-6. Add network interfaces (bridge to `vmbr0` or other).
-7. Review and finish.
+2. Fill in VM ID and Name (no space).![screenshot_2025-08-11-01-43-36](images/screenshot_2025-08-11-01-43-36.png)
+3.Next:OS- Select ISO image, OS type, Version, check additional drivers for VirtIO drivers-Iso Image: Select Virtio for windows:![screenshot_2025-08-11-01-48-44](images/screenshot_2025-08-11-01-48-44.png)
+4. Choose System Settings: Check- Qemu agent, Add TPM and select storage, Add EFI DISK and select storage (windows 11 only) then next ![screenshot_2025-08-11-01-54-04](images/screenshot_2025-08-11-01-54-04.png).
+5. Next:Chose Disk size. ![screenshot_2025-08-11-02-02-23](images/screenshot_2025-08-11-02-02-23.png)
+6. Configure CPU -Cores, Memory![screenshot_2025-08-11-02-03-25](images/screenshot_2025-08-11-02-03-25.png) and ![screenshot_2025-08-11-02-04-15](images/screenshot_2025-08-11-02-04-15.png)
+7. Add network interfaces (bridge standard: `vmbr0` or other and deselect firewall).![screenshot_2025-08-11-02-07-52](images/screenshot_2025-08-11-02-07-52.png)
+8. Review and finish - check Start after created if desired.![screenshot_2025-08-11-02-09-21](images/screenshot_2025-08-11-02-09-21.png)
 
 ### ISO Upload
 
