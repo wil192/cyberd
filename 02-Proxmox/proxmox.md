@@ -80,7 +80,7 @@ bridge_fd 0
 ![screenshot_2025-08-11-01-40-08](images/screenshot_2025-08-11-01-40-08.png)
 2. Fill in VM ID and Name (no space).  
 ![screenshot_2025-08-11-01-43-36](images/screenshot_2025-08-11-01-43-36.png)
-3.Next:OS- Select ISO image, OS type, Version, check additional drivers for   VirtIO drivers-Iso Image: Select Virtio for windows:![screenshot_2025-08-11-01-48-44](images/screenshot_2025-08-11-01-48-44.png)
+3. Next:OS- Select ISO image, OS type, Version, check additional drivers for VirtIO drivers-Iso Image: Select Virtio for windows:  ![screenshot_2025-08-11-01-48-44](images/screenshot_2025-08-11-01-48-44.png)
 4. Choose System Settings: Check- Qemu agent, Add TPM and select storage, Add EFI DISK   and select storage (windows 11 only) then next ![screenshot_2025-08-11-01-54-04](images/screenshot_2025-08-11-01-54-04.png).
 5. Next:Chose Disk size.  
 ![screenshot_2025-08-11-02-02-23](images/screenshot_2025-08-11-02-02-23.png)
