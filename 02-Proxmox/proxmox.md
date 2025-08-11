@@ -76,8 +76,8 @@ bridge_fd 0
 
 ### Creating a VM
 
-1. Click **Create VM** on the top right.
-2. Fill in VM ID and Name.
+1. Click **Create VM** on the top right. or right click pve node: ![screenshot_2025-08-11-01-18-51](imagesimages/screenshot_2025-08-11-01-18-51.png)
+2. Fill in VM ID and Name (no space).
 3. Select ISO from storage.
 4. Choose OS type.
 5. Configure CPU, Memory, Disk size.

@@ -49,8 +49,9 @@ This document describes the network design for the cyber simulation environment.
 ## Bridges and Interfaces
 
 - `vmbr0` - Bridge connected to physical interface `eno1`, tagged for VLAN 10.
-- `vmbr1` - Bridge for VLAN 20 traffic.
-- `vmbr2` - Bridge for VLAN 30 traffic.
+- `vmbr1` - Bridge for VLAN 10 traffic.
+- `vmbr2` - Bridge for VLAN 20 traffic.
+- `vmbr3` - Bridge for VLAN 30 traffic.
 
 ---
 
