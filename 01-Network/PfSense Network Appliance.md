@@ -39,10 +39,13 @@ Click on **Pfsense> Hardware> Add> Network device> Uncheck firewall> Add> Do X3*
   
   - Step One:
   ![screenshot_2025-08-13-01-00-17](images/screenshot_2025-08-13-01-00-17.png)  
+  
   - Step Two:
   ![screenshot_2025-08-13-01-02-35](images/screenshot_2025-08-13-01-02-35.png)
+  
   - Step Three & Four:
   ![screenshot_2025-08-13-01-03-50](images/screenshot_2025-08-13-01-03-50.png)
+  
   - Step Five:
   ![screenshot_2025-08-13-01-04-56](images/screenshot_2025-08-13-01-04-56.png)
 
