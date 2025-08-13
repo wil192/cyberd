@@ -34,21 +34,20 @@ This document outlines the configuration steps for pfSense to manage three separ
 ## Interface Assignments
 
 Setting up four adapters for pfsense 1 for WAN and the rest for 3 segmented networks for our entities:
+
 ### Steps ###
+
 Click on **Pfsense> Hardware> Add> Network device> Uncheck firewall> Add> Do X3**
   
-  - Step One:
+Step One:
   ![screenshot_2025-08-13-01-00-17](images/screenshot_2025-08-13-01-00-17.png)  
-  
-  - Step Two:
+Step Two:
   ![screenshot_2025-08-13-01-02-35](images/screenshot_2025-08-13-01-02-35.png)
-  
-  - Step Three & Four:
+Step Three & Four:
   ![screenshot_2025-08-13-01-03-50](images/screenshot_2025-08-13-01-03-50.png)
-  
-  - Step Five:
+Step Five:
   ![screenshot_2025-08-13-01-04-56](images/screenshot_2025-08-13-01-04-56.png)
-
+  
 
 | Interface | Purpose                   | Description                 |
 |-----------|---------------------------|-----------------------------|
