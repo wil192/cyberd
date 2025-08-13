@@ -15,12 +15,16 @@
 
 ## Overview
 
-This document outlines the configuration steps for pfSense to manage three separate network zones for organizational, defense, and attack infrastructure. Each zone is assigned a unique subnet.
+This document outlines the configuration steps for pfSense to manage three separate network zones for organizational(xorg), defense (blue team), and attack(red team) infrastructure. Each zone is assigned a unique subnet.
 
 ---
 
 ## Initial Setup
 
+
+- Install pfsense following same vm creation steps for entities
+- Access pfSense web UI at `https://<pfsense-ip>`.
+- Access pfSense web UI at `https://<pfsense-ip>`.
 - Access pfSense web UI at `https://<pfsense-ip>`.
 - Login with admin credentials.
 - Go to **Interfaces > Assignments**.
@@ -29,7 +33,18 @@ This document outlines the configuration steps for pfSense to manage three separ
 
 ## Interface Assignments
 
-Assuming the pfSense VM has at least four NICs:
+Setting up four adapters for pfsense 1 for WAN and the rest for 3 segmented networks for our entities:
+### Steps ###
+  - Click on **Pfsense> Hardware> Add> Network device> Uncheck firewall> Add> Do X3**
+  - One
+  ![screenshot_2025-08-13-01-00-17](images/screenshot_2025-08-13-01-00-17.png)
+  - Two
+  ![screenshot_2025-08-13-01-02-35](images/screenshot_2025-08-13-01-02-35.png)
+  - Three & Four
+  ![screenshot_2025-08-13-01-03-50](images/screenshot_2025-08-13-01-03-50.png)
+  - Five
+  ![screenshot_2025-08-13-01-04-56](images/screenshot_2025-08-13-01-04-56.png)
+
 
 | Interface | Purpose                   | Description                 |
 |-----------|---------------------------|-----------------------------|
@@ -39,10 +54,10 @@ Assuming the pfSense VM has at least four NICs:
 | LAN3      | Attack Network (Subnet 3) | Attack subnet               |
 
 1. Assign NICs in **Interfaces > Assignments**:
-   - `em0` → WAN
-   - `em1` → LAN1
-   - `em2` → LAN2
-   - `em3` → LAN3
+   - `net0` → WAN
+   - `net1` → LAN1
+   - `net2` → LAN2
+   - `net3` → LAN3
 
 2. Enable each interface and set a static IP address for the subnet gateway.
 
