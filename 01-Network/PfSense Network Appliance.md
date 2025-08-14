@@ -39,7 +39,7 @@ Setting up four adapters for pfsense 1 for WAN and the rest for 3 segmented netw
 
 Click on **Pfsense> Hardware> Add> Network device> Uncheck firewall> Add> Do X3**
 
-#### As Follows:####
+#### As Follows: ####
   
 Step One:
 
