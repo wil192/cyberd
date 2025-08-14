@@ -46,7 +46,7 @@
 - Key actions: Day-to-day business tasks 
 
 ##### Installation & Configuration
-1. Start VM and clicl on console or consle drop down top right and novnc. Press any   key to begin installtion  ![screenshot_2025-08-11-02-57-29](images/screenshot_2025-08-11-02-57-29.png)
+1. Start VM and click on console or consle drop down top right and novnc. Press any   key to begin installtion  ![screenshot_2025-08-11-02-57-29](images/screenshot_2025-08-11-02-57-29.png)
 2. Select OS version to install and accept license terms  ![screenshot_2025-08-11-03-00-00](images/screenshot_2025-08-11-03-00-00.png)
 3. System couldn't find any drives to install OS  ![screenshot_2025-08-11-03-03-10](images/screenshot_2025-08-11-03-03-10.png)  
 ###### Load Missing Drivers: 
