@@ -5,6 +5,7 @@
 - [Overview](#overview)
 - [Initial Setup](#initial-setup)
 - [Interface Assignments](#interface-assignments)
+- [Pf Post-provisioning Configuration](#Pfsense-Post-provisioning-Configuration)
 - [Create VLANs and Subnets](#create-vlans-and-subnets)
 - [Configure DHCP Servers](#configure-dhcp-servers)
 - [Firewall Rules](#firewall-rules)
@@ -71,14 +72,128 @@ Step Five:
    - `net2` → LAN2
    - `net3` → LAN3
 
-## PF Post-Installation Configuration:
+---
+
+## Pf Post-provisioning Configuration
+
+- ### Installation ###
+
+Start pfsense  VM and select novnc view to proceed gui installation
+
+![screenshot_2025-08-13-23-36-49](images/screenshot_2025-08-13-23-36-49.png)
+
+Click enter to accept
+
+![screenshot_2025-08-13-23-38-11](images/screenshot_2025-08-13-23-38-11.png)
+
+And enter to ok " install pfsense "
+
+![screenshot_2025-08-13-23-39-36](images/screenshot_2025-08-13-23-39-36.png)
+
+Ok to continue
 
 Choose Vtnet0 for WAN
+
 ![screenshot_2025-08-13-01-40-00](images/screenshot_2025-08-13-01-40-00.png)
 
+Select ok "Enter" to continue
 
+![screenshot_2025-08-13-23-43-03](images/screenshot_2025-08-13-23-43-03.png)
 
+Continue with ok by clicking enter.  After connection check, also 'enter' to 'install CE'
 
+Finally pfsense begins installation
+
+![screenshot_2025-08-13-23-51-33](images/screenshot_2025-08-13-23-51-33.png)
+
+Reboot with enter
+
+![screenshot_2025-08-13-23-53-59](images/screenshot_2025-08-13-23-53-59.png)
+
+Do vlans need to be setup first? type no and enter
+
+![screenshot_2025-08-13-23-56-49](images/screenshot_2025-08-13-23-56-49.png)
+
+Enter wan interface name: vtnet0 and enter
+
+![screenshot_2025-08-13-23-59-47](images/screenshot_2025-08-13-23-59-47.png)
+
+Enter LAN interface name: vtnet1
+
+![screenshot_2025-08-14-00-01-31](images/screenshot_2025-08-14-00-01-31.png)
+
+Enter optional 1 interface name: vtnet2
+
+![screenshot_2025-08-14-00-03-18](images/screenshot_2025-08-14-00-03-18.png)
+
+Optional interface 2: vtnet3
+
+![screenshot_2025-08-14-00-04-36](images/screenshot_2025-08-14-00-04-36.png)
+
+Interface assigned as follows:
+   - WAN -> vtnet0
+   - LAN -> vtnet1
+   - OPT1 -> vtnet2
+   - OPT2 -> vtnet3
+
+![screenshot_ ](images/screenshot_%20.png) 
+
+y & 'enter'  to proceed
+
+Installation complete...
+
+![screenshot_2025-08-14-00-12-24](images/screenshot_2025-08-14-00-12-24.png)
+
+- ### Interface Setup ###
+
+Note: Interface 1- vtnet0(WAN) is put aside for now.
+
+1. Interface 2: LAN- vnet1
+
+Enter 2 to see available interfaces for set up
+
+![screenshot_2025-08-14-00-17-44](images/screenshot_2025-08-14-00-17-44.png)
+
+Select 2, for LAN - second interface **IP via DHCP ? N> New LAN IPv4: 10.0.1.1> Subnet bit count: 24> for a WAN enter new gateway address: 'enter'> Config IPv6 via DHCP? N> Enter new LAN IPv6 : 'enter'>**
+
+above steps:
+
+![screenshot_2025-08-14-00-30-21](images/screenshot_2025-08-14-00-30-21.png)
+
+Continued:
+**Want to enable DHCP server on LAN? Y> Enter start address: 10.0.1.2> Enter end addr of IPv4 client addr range: 10.0.1.245> Revert to HTTP as webconfigurator protocol? N> DONE**
+
+![screenshot_2025-08-14-00-39-17](images/screenshot_2025-08-14-00-39-17.png)
+
+Enter to continue to next interface setup.
+
+2. Interface 3: OPT1- vnet2
+
+Select 3 **Config via DHCP? N> Enter new OPT1 IPv4 addr: 10.0.2.1> Enter new OPT1 IPv4 bitcount: 24> For a WAN enter new OPT1 gateway addr: Not WAN 'enter' and continue> Configure IPv6 addrr OPT1 interface via DHCP6: N> Enter new OPT1 IPv6 addr: Enter> Enable DHCP server on OPT1? Y>**
+
+Above steps:
+
+![screenshot_2025-08-14-00-52-11](images/screenshot_2025-08-14-00-52-11.png)
+
+Continued:
+**Enter start addr of the IPv4 client addr range: 10.0.2.2> Enter end addr of IPv4 client addr range: 10.0.2.245> DONE**
+
+![screenshot_2025-08-14-00-56-48](images/screenshot_2025-08-14-00-56-48.png)
+
+Enter to continue to next interface setup
+
+3. Interface 4: OPT2 - vnet3
+
+Select 4 (4 & enter) **Config via DHCP? N> Enter new OPT1 IPv4 addr: 10.0.3.1> Enter new OPT1 IPv4 bitcount: 24> For a WAN enter new OPT1 gateway addr: Not WAN 'enter' and continue> Configure IPv6 addrr OPT1 interface via DHCP6: N> Enter new OPT1 IPv6 addr: Enter> Enable DHCP server on OPT1? Y>**
+
+Above steps:
+
+![screenshot_2025-08-14-01-03-02](images/screenshot_2025-08-14-01-03-02.png)
+
+Continued:
+**Enter start addr of the IPv4 client addr range: 10.0.3.2> Enter end addr of IPv4 client addr range: 10.0.3.245> DONE**
+
+![screenshot_2025-08-14-01-05-04](images/screenshot_2025-08-14-01-05-04.png)
 
 
 2. Enable each interface and set a static IP address for the subnet gateway.
