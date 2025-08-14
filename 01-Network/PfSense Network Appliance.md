@@ -40,15 +40,19 @@ Setting up four adapters for pfsense 1 for WAN and the rest for 3 segmented netw
 Click on **Pfsense> Hardware> Add> Network device> Uncheck firewall> Add> Do X3**
   
 Step One:
+
 ![screenshot_2025-08-13-01-00-17](images/screenshot_2025-08-13-01-00-17.png)  
 
 Step Two:
+
 ![screenshot_2025-08-13-01-02-35](images/screenshot_2025-08-13-01-02-35.png)
 
 Step Three & Four:
+
 ![screenshot_2025-08-13-01-03-50](images/screenshot_2025-08-13-01-03-50.png)
 
 Step Five:
+
 ![screenshot_2025-08-13-01-04-56](images/screenshot_2025-08-13-01-04-56.png)
   
 
@@ -64,6 +68,16 @@ Step Five:
    - `net1` → LAN1
    - `net2` → LAN2
    - `net3` → LAN3
+
+## PF Post-Installation Configuration:
+
+Choose Vtnet0 for WAN
+![screenshot_2025-08-13-01-40-00](images/screenshot_2025-08-13-01-40-00.png)
+
+
+
+
+
 
 2. Enable each interface and set a static IP address for the subnet gateway.
 
